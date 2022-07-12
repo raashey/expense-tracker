@@ -1,14 +1,12 @@
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import { NewExpenseForm } from "./NewExpenseForm";
 import "./AddExpense.scss"
 export const AddExpense = () => {
   return (
-    <Card className="add-card bg-primary m-5">
+    <Card className="add-card bg-primary m-5 position-relative">
       <Card.Body className="d-flex flex-column align-items-center">
-        <Card.Title className="text-light">Add new expense</Card.Title>
-        <Card.Text className="text-light">
-          Here is the component where you can add new expense
-        </Card.Text>
-        <Button className="bg-light text-dark">Add new expense</Button>
+        <Card.Title className="text-light">New expense</Card.Title>
+        <NewExpenseForm></NewExpenseForm>
       </Card.Body>
     </Card>
   );
