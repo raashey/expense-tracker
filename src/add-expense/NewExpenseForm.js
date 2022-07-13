@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
-export const NewExpenseForm = () => {
+export const NewExpenseForm = (props) => {
   const [validated, setValidated] = useState(false);
   const [date, setDate] = useState("");
   const [name, setName] = useState("");
@@ -30,7 +30,7 @@ export const NewExpenseForm = () => {
       name: name,
       price: price,
     };
-    console.log(expense);
+    props.onSaveExpenseData(expense);
   };
 
   return (
@@ -45,6 +45,7 @@ export const NewExpenseForm = () => {
         <Form.Control
           required
           type="date"
+          value={date}
           onChange={dateChangeHandler}
         ></Form.Control>
         <Form.Control.Feedback type="invalid">
@@ -56,6 +57,7 @@ export const NewExpenseForm = () => {
         <Form.Control
           required
           type="text"
+          value={name}
           placeholder="Expense name"
           onChange={nameChangeHandler}
         ></Form.Control>
@@ -68,6 +70,7 @@ export const NewExpenseForm = () => {
         <Form.Control
           required
           type="number"
+          value={price}
           placeholder="Price"
           min={1}
           onChange={priceChangeHandler}

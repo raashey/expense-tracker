@@ -44,7 +44,7 @@ export const ExpenseItem = (props) => {
           </div>
           <div className="d-flex grow-2 flex-row justify-content-end">
             <div className="price d-flex justify-content-center align-items-center border border-warning">
-              <h2>{props.price}</h2>
+              <h2>{props.price}$</h2>
             </div>
           </div>
         </Card.Body>
