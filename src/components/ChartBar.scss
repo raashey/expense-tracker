@@ -1,0 +1,31 @@
+@import '../assets/variables.scss';
+
+.chart-bar {
+    width: 5%;
+    height: 100%;
+}
+
+.chart-bar-value {
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.chart-bar-box {
+    width: 30%;
+    height: 100%;
+}
+
+.chart-bar-fill {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: $warning;
+    transition: all 0.3s ease-out;
+}
+
+.chart-bar-label {
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-align: center;
+}

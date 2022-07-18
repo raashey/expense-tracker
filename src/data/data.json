@@ -1,0 +1,24 @@
+{
+  "expenses": [
+    { "id": 1, "date": "2021-07-02", "name": "Groceries", "price": "20" },
+    { "id": 2, "date": "2022-05-04", "name": "HM", "price": "50" },
+    { "id": 3, "date": "2022-06-04", "name": "Gucci", "price": "100" },
+    { "id": 4, "date": "2022-07-04", "name": "Zara", "price": "50" },
+    { "id": 5, "date": "2022-07-07", "name": "Douglas", "price": "100" },
+    { "id": 6, "date": "2022-07-10", "name": "McDonalds", "price": "15" },
+    { "id": 6, "date": "2022-01-15", "name": "Airpods", "price": "200" }
+  ],
+  "chartData": [
+    {"label": "Jan", "value": 0},
+    {"label": "Feb", "value": 0},
+    {"label": "Mar", "value": 0},
+    {"label": "Apr", "value": 0},
+    {"label": "May", "value": 0},
+    {"label": "Jun", "value": 0},
+    {"label": "Jul", "value": 0},
+    {"label": "Aug", "value": 0},
+    {"label": "Sep", "value": 0},
+    {"label": "Nov", "value": 0},
+    {"label": "Dec", "value": 0}
+  ]
+}
