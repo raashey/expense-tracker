@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
-import { ExpenseFilter } from "../expense-filter/ExpenseFilter";
-import { ExpenseItem } from "../expense-item/ExpenseItem";
+import { ExpenseFilter } from "./ExpenseFilter";
+import { ExpenseItem } from "./ExpenseItem";
 import { useState } from "react";
 import "./ExpenseList.scss";
 

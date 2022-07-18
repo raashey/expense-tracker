@@ -1,12 +1,11 @@
 import "./App.scss";
-import { Expenses } from "./expenses/Expenses";
+import { Expenses } from "./features/expenses/components/Expenses";
+import { Navbar } from "./layouts/Navbar";
 
 function App() {
   return (
     <div className="main">
-      <div className="header mt-5">
-        <h2>Expense Tracker</h2>
-      </div>
+      <Navbar/>
       <Expenses/>
     </div>
   );

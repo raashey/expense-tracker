@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { AddExpense } from "./add-expense/AddExpense";
-import { ExpenseList } from "./expense-list/ExpenseList";
+import { AddExpense } from "./AddExpense";
+import { ExpenseList } from "./ExpenseList";
 import './Expenses.scss'
 
 export const Expenses = () => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Card } from "react-bootstrap";
-import { ExpenseDate } from "./ExpenseDate";
+import { FormatDate } from "../../../utils/FormatDate";
 import "./ExpenseItem.scss";
 
 export const ExpenseItem = (props) => {
@@ -34,10 +34,10 @@ export const ExpenseItem = (props) => {
       >
         <Card.Body className="d-flex flex-row justify-content-between align-items-center text-light">
           <div className="d-flex grow-2 flex-row justify-content-start">
-            <ExpenseDate
+            <FormatDate
               date={date}
               className="d-flex grow-2 flex-row justify-content-center"
-            ></ExpenseDate>
+            />
           </div>
           <div className="d-flex grow-6 flex-row justify-content-center">
             <h2>{props.name}</h2>
