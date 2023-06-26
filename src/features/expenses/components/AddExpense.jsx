@@ -1,5 +1,5 @@
 import { Card } from "react-bootstrap";
-import { NewExpenseForm } from "./NewExpenseForm";
+import { NewExpenseForm } from "../forms/NewExpenseForm";
 import "./AddExpense.scss";
 export const AddExpense = (props) => {
   const saveExpenseDataHandler = (data) => {
@@ -11,7 +11,7 @@ export const AddExpense = (props) => {
   };
 
   return (
-    <Card className="add-card bg-primary m-5">
+    <Card className="add-card m-5 bg-primary">
       <Card.Body className="d-flex flex-column align-items-center">
         <Card.Title className="text-light">New expense</Card.Title>
         <NewExpenseForm onSaveExpenseData={saveExpenseDataHandler}></NewExpenseForm>

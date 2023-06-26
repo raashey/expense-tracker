@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { Card } from "react-bootstrap";
-import { FormatDate } from "../../../utils/FormatDate";
-import "./ExpenseItem.scss";
+import { useState } from 'react';
+import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { FormatDate } from '../../../utils/FormatDate';
+import './ExpenseItem.scss';
 
 export const ExpenseItem = (props) => {
   const [clicked, setClicked] = useState(false);
   const [hovered, setHovered] = useState(false);
 
-  const notHoveredStyle = "expense-item bg-secondary m-3";
-  const hoveredStyle = "expense-item bg-secondary m-3 border border-warning";
+  const notHoveredStyle = 'expense-item bg-secondary m-3';
+  const hoveredStyle = 'expense-item bg-secondary m-3 border border-warning';
 
   const setClickedState = () => {
     setClicked(!clicked);
@@ -32,21 +32,34 @@ export const ExpenseItem = (props) => {
         onMouseOver={setHoveredStateTrue}
         onMouseOut={setHoveredStateFalse}
       >
-        <Card.Body className="d-flex flex-row justify-content-between align-items-center text-light">
-          <div className="d-flex grow-2 flex-row justify-content-start">
-            <FormatDate
-              date={date}
-              className="d-flex grow-2 flex-row justify-content-center"
-            />
+        <Card.Body>
+          <Container fluid>
+            <Row>
+              <Col xs={2}>
+                <FormatDate
+                  date={date}
+                  className="d-flex flex-row justify-content-center"
+                />
+              </Col>
+            <Col xs={8} className='d-flex justify-content-center align-items-center'>
+              <h2>{props.name}</h2>
+            </Col>
+            <Col xs={2} className='d-flex justify-content-center align-items-center'>
+              <h2>{props.price}$</h2>
+            </Col>
+            </Row>
+          </Container>
+          {/* <div className="d-flex grow-2 flex-row justify-content-start">
+            
           </div>
           <div className="d-flex grow-6 flex-row justify-content-center">
-            <h2>{props.name}</h2>
+            
           </div>
           <div className="d-flex grow-2 flex-row justify-content-end">
             <div className="price d-flex justify-content-center align-items-center border border-warning">
-              <h2>{props.price}$</h2>
+              
             </div>
-          </div>
+          </div> */}
         </Card.Body>
       </Card>
     );
@@ -59,7 +72,8 @@ export const ExpenseItem = (props) => {
         onMouseOut={setHoveredStateFalse}
       >
         <Card.Body className="d-flex flex-row justify-content-between align-items-center text-light">
-          Uno reverse
+          <Button onClick={props.onItemDelete}>Delete</Button>
+          <Button>Modify</Button>
         </Card.Body>
       </Card>
     );

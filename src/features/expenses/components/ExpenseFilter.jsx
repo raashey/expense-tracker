@@ -15,16 +15,14 @@ export const ExpenseFilter = (props) => {
   };
 
   return (
-    <div className="custom-filter">
-      <Form.Select value={props.selected} onChange={setFilterValue}>
-        {filterList.map((item) => {
-          return (
-            <option key={item.id} value={item.year}>
-              {item.year}
-            </option>
-          );
-        })}
-      </Form.Select>
-    </div>
+    <Form.Select value={props.selected} onChange={setFilterValue}>
+      {filterList.map((item) => {
+        return (
+          <option key={item.id} value={item.year}>
+            {item.year}
+          </option>
+        );
+      })}
+    </Form.Select>
   );
 };

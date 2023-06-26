@@ -6,7 +6,7 @@
     { "id": 4, "date": "2022-07-04", "name": "Zara", "price": "50" },
     { "id": 5, "date": "2022-07-07", "name": "Douglas", "price": "100" },
     { "id": 6, "date": "2022-07-10", "name": "McDonalds", "price": "15" },
-    { "id": 6, "date": "2022-01-15", "name": "Airpods", "price": "200" }
+    { "id": 7, "date": "2022-01-15", "name": "Airpods", "price": "200" }
   ],
   "chartData": [
     {"label": "Jan", "value": 0},

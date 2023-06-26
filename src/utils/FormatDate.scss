@@ -1,7 +1,7 @@
-@import '../assets/variables.scss';
+@import '../assets/custom.scss';
 
 .date {
     width: 50%;
-    border: solid 1px $warning;
+    border: solid 1px theme-color('warning');
     border-radius: 5%;
 }
